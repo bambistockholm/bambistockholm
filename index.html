@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary Meta Tags -->
+    <title>BAMBi</title>
+    <meta name="title" content="Söders folkanda möter fransk kokkonst" />
+    <meta
+      name="description"
+      content="En tidlös krog som nått kultstatus innan den ens har öppnat "
+    />
+    <meta
+      name="keywords"
+      content="bambi, bambi restaurang, bjurholmsplan, bjurholmsplan restaurang, söder restauraung, södermalm restaurang, stockholm restaurant, södermalm restaurant, french cuisine stockholm, trendy restaurants stockholm, artur amoghli, bar alba, nytorget, nytogrget restaurang, nytorget restaurant"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://bambi.nu" />
+    <meta property="og:title" content="BAMBi" />
+    <meta
+      property="og:description"
+      content="Söders folkanda möter fransk kokkonst"
+    />
+    <meta property="og:image" content="img/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://bambi.nu" />
+    <meta property="twitter:title" content="BAMBi" />
+    <meta
+      property="twitter:description"
+      content="Söders folkanda möter fransk kokkonst"
+    />
+    <meta property="twitter:image" content=img/og-image.jpg>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+
+    <script>
+      var a = document.createElement("a");
+      var linkText = document.createTextNode("BOKA BORD");
+      a.appendChild(linkText);
+      a.title = "BOKA BORD";
+      a.href = "http://example.com";
+      a.id = "bokaBordLink"; // Add an id to the link
+      document.body.appendChild(a);
+
+      // Add an event listener to change background color on link hover
+      var link = document.getElementById("bokaBordLink");
+      link.addEventListener("mouseover", function () {
+        // Change the background color to orange when hovering
+        document.body.style.backgroundColor = "#FB6511";
+        document.body.style.color = "#000"; // Change text color to black
+      });
+
+      // Add an event listener to reset background color when mouse leaves the link
+      link.addEventListener("mouseout", function () {
+        // Restore the default background color when not hovering
+        document.body.style.backgroundColor = "#F9F7F3"; // Original background color
+        document.body.style.color = "#564738"; // Original text color
+      });
+    </script>
+  </head>
+  <body class="transition">
+    <img src="img/bambi2.svg" />
+
+    <div id="my_chatgpt_style_div_1" class="my_chatgpt_div_style"></div>
+
+    <p id="paragraph_id1" style="white-space: pre"></p>
+
+    <script>
+      // Define the text to type
+      var textToType = `
+BBBBB     AA    M     M  BBBBB   I
+B    B   A  A   M M M M  B    B  
+BBBBB   AAAAAA  M  M  M  BBBBB   I
+B    B  A    A  M     M  B    B  I
+BBBBB   A    A  M     M  BBBBB   I      
+
+      En tidlös krog i hjärtat
+        av "Nya" Södermalm
+
+          · KÖKET ÖPPET · 
+Måndag......................STÄNGT
+Tisdag–Söndag................17–23
+          
+Bjurholmsgatan..................18
+Stockholm....................11663
+.........En.......................
+...........halv...................
+...............trappa.............
+.....................ner..........
+Org.Nr.................559438–3639
+
+Telefon................070–7535330
+Email................info@bambi.nu
+Instagram............@bambi_4_ever
+
+                ···    
+
+        ÖPPNAR OKTOBER 2023
+        `;
+
+      // Get the paragraph element
+      var paragraph = document.getElementById("paragraph_id1");
+
+      // Function to type the text
+      function typeText() {
+        var index = 0;
+        var typingInterval = setInterval(function () {
+          paragraph.innerHTML += textToType.charAt(index);
+          index++;
+
+          if (index === textToType.length) {
+            clearInterval(typingInterval);
+            // Display the link inline
+            paragraph.innerHTML +=
+              '<a id="bokaBordLink" href="https://cloud.caspeco.se/public/webBooking?system=se_bamsto&unitId=13">» BOKA BORD «</a>';
+          }
+        }, 3); // Typing speed in milliseconds
+      }
+
+      // Start typing the text
+      typeText();
+    </script>
+  </body>
+</html>

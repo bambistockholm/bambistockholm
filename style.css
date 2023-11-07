@@ -1,0 +1,77 @@
+ html {
+            min-height: 100%;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Century Schoolbook Monospace';
+            background-color: #F9F7F3;
+            margin: 0;
+            color: #564738;
+        }
+
+        body.transition {
+            transition: background-color 0.5s ease, color 0.5s ease; /* Add color transition */
+        }
+
+        img {
+            width: 98dvw;
+            margin-left:1dvw;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: fade 4000s;
+            animation-delay: 4s;
+            z-index: 1;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FB6511;
+            width: 34ch;
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+
+a:hover{
+    color: #9B3D07;
+    cursor:pointer;
+}
+
+        #paragraph_id1 {
+            font-size: 16px;
+            text-align: left;
+            white-space: pre-wrap !important;
+            position: absolute;
+            top: calc(50% - 3ch);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width:34ch;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 1;
+            }
+            
+            .015%{
+                opacity:0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            #paragraph_id1 {
+                font-size: 16px;
+            }
+            
+            img {
+            width: 96dvw;
+            margin-left:2dvw;
+        }
